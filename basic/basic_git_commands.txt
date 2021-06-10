@@ -1,0 +1,9 @@
+Basic GIT Commands
+
+git add -all
+git rm <filename>
+git commit -m <message>
+git status
+git clone <address>
+git pull/push
+
