@@ -1,0 +1,5 @@
+#ssh Basic Commands
+
+#Adding client key to server:
+ssh-copy-id username@servername
+
