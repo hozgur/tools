@@ -1,0 +1,8 @@
+#remove non-empty folder
+rm -r 
+
+#change permissions
+chmod 744 name user rwx i group: r, other: r
+4 : Read
+2 : Write
+1 : Execute

@@ -1,0 +1,6 @@
+# Run python commands as script
+
+#add this line
+#!/usr/bin/python3
+
+#check location with whereis or witch commands
