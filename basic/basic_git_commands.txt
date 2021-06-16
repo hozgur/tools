@@ -7,3 +7,5 @@ git status
 git clone <address>
 git pull/push
 
+git config --global user.name "Hakan ÖZGÜR"
+git config --global user.email "hakan.ozgur@gmail.com"
