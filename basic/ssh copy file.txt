@@ -1,0 +1,11 @@
+# Copy File local to remote
+scp myfile.txt remoteuser@remoteserver:/remote/folder/
+
+#Copy files remote to local
+scp remoteuser@remoteserver:/remote/folder/remotefile.txt  localfile.txt
+
+#copy multiple files
+scp myfile.txt myfile2.txt remoteuser@remoteserver:/remote/folder/
+
+# Copy All Files
+scp * remoteuser@remoteserver:/remote/folder/
