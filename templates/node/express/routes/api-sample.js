@@ -4,9 +4,6 @@ const router = express.Router();
 
 const data = require('../sample-data.json')
 
-const axios = require('axios');
-
-
 router.get("/", (req,res) => {
     res.json(data);
 });
@@ -16,7 +13,6 @@ router.post("/", (req,res) => {
   // post kullanıyorsak 
   if(req.body)
   {
-    console.log(req);
     res.json(req.body);
   }
   else
