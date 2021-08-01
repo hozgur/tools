@@ -4,9 +4,14 @@ const router = express.Router();
 
 const data = require('../sample-data.json')
 
+const errorMessages = {
+  ERR_NO_DATA: 'veri gönderilmesi gerekli.'
+}
+
 router.get("/", (req,res) => {
     res.json(data);
 });
+
 
 router.post("/", (req,res) => {
   
@@ -17,12 +22,14 @@ router.post("/", (req,res) => {
   }
   else
   {
-    res.status(400).send('veri bekleniyor.')
+    res.status(400).send(errorMessages.ERR_NO_DATA)
   }
 });
 
-router.post("/:engine/:method", (req,res) => {
+router.post("/:param1/:param2", (req,res) => {
   
+  console.log("Param 1 :",req.params.param1);
+  console.log("Param 2 :",req.params.param2);
   // post kullanıyorsak 
   if(req.body)
   {
@@ -30,7 +37,7 @@ router.post("/:engine/:method", (req,res) => {
   }
   else
   {
-    res.status(400).send('veri bekleniyor.')
+    res.status(400).send(errorMessages.ERR_NO_DATA)
   }
 });
 
