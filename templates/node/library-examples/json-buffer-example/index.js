@@ -1,3 +1,6 @@
+// Bu örnekte Buffer kullanımını gösterir.
+// Ayrıca alt kısımda json-buffer kullanımı vardır.
+
 
 var Buffer = require('buffer').Buffer
 
